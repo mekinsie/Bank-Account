@@ -15,7 +15,28 @@
 
 ## Description
 
-_The purpose of this bank account application is to practice the concepts of ._
+_The purpose of this bank account application is to practice the concepts of Object Oriented JavaScript Prototypes._
+
+## *Specs*
+
+```js
+
+Describe: BankAccount();
+Test: "It will create a BankAccount object that holds currentBalance."
+Expect: new BankAccount().toEqual(({currentBalance:{}));
+
+Describe: Withdrawal();
+Test: "It will create a BankAccount object that holds currentBalance."
+Code:
+Expect:
+
+
+Describe: AddressBook();
+Test: "It will produce a prototype for proceeding objects to inherit from"
+Expect(new AddressBook().toEqual({contacts: {}, currentId: 0}));
+
+
+```
 
 ## Setup/Installation Requirements
 
@@ -35,7 +56,7 @@ _The purpose of this bank account application is to practice the concepts of ._
 
 - Once you have chosen your desired directory use the command.
 ```bash 
-git clone https://github.com/dcouch440/address-book.git
+git clone https://github.com/mekinsie/Bank-Account_
 ```
 
 <div 
@@ -95,12 +116,15 @@ code .
 
 ## License
 
-_GPL_
+_MIT_
 
 Copyright (c) 2021 **_Mekinsie Callahan & David Couch_**
 ## Contact Information
 
-Reach me: via <a href="https://www.linkedin.com/in/mekinsie/" target="_blank">Linkedin</a> or <a href="mailto:mekinsie.aja@gmail.com" target="_blank">email</a></li>.
+Reach Mekinsie: via <a href="https://www.linkedin.com/in/mekinsie/" target="_blank">Linkedin</a> or <a href="mailto:mekinsie.aja@gmail.com" target="_blank">email</a></li>.
 
-Checkout my <a href="https://github.com/mekinsie" target="_blank">github</a>.
+Reach David: via <a href="https://www.linkedin.com/in/davidcouch440/" target="_blank">Linkedin</a> or <a href="mailto:dcouch440@gmail.com" target="_blank">email</a></li>.
+
+
+Checkout Mekinsie's <a href="https://github.com/mekinsie" target="_blank">github</a>.
 
