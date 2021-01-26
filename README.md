@@ -9,7 +9,6 @@
 
 * _CSS_
 * _HTML5_
-* _Bootstrap_
 * _JavaScript_
 * _jQuery_
 
@@ -21,29 +20,18 @@ _The purpose of this bank account application is to practice the concepts of Obj
 
 ```js
 
-Describe: BankAccount();
-Test: "It will create a BankAccount object that holds currentBalance, date and transaction information."
-Expect: new BankAccount().toEqual(({transactions:{}, currentId: 0));
+Describe: Account();
+Test: "It will create a Account object that holds current balance and date."
+Expect: new Account().toEqual({currentBalance: 0, date: 'current-date'});
 
-Describe: Transaction();
-Test: "It will create a transaction object that holds user transaction history and current balance."
-Expect: new Transaction('300', new Date(), '5', '0').toEqual({currentbalance: '295', 'current Date', withdrawal: '-5', deposit: '0'});
+Describe: Account.prototype.deposit();
+Test: "It will add input value to current balance."
+Expect: account.deposit('5').toEqual(account.currentBalance + 5)
 
-Describe: BankAccount.prototype.addTransaction();
-Test: "It will add transaction object to AddressBook."
-Expect: this.addTransaction({currentbalance: '295', 'current Date', withdrawal: '-5', deposit: '0'}).toEqual({{currentbalance: '295', 'current Date', withdrawal: '-5', deposit: '0'}, currentId: 1});
+Describe: Account.prototype.withdrawal();
+Test: "It will subtract the input value from the current balance."
+Expect: account.deposit("5").toEqual(account.currentBalance - 5);
 
-Describe: BankAccount.prototype.assignId();
-Test: "It will grab the current id from BankAccount and increase its value by one and return it"
-Expect(this.assignId().toEqual(1))
-
-Describe: addstoCurrentBalance();
-Test: "It will take withdrawal 
-Expect:
-
-Describe: addstoCurrentBalance();
-Test: "It will take withdrawal 
-Expect:
 ```
 
 ## Setup/Installation Requirements

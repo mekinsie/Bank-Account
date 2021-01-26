@@ -3,11 +3,11 @@ function Account() {
   this.currentBalance = 0;
   this.date = new Date();
 }
-Account.prototype.Deposit = function(inputValue) {
+Account.prototype.deposit = function(inputValue) {
   this.currentBalance += parseInt(inputValue);
   return this.currentBalance;
 }
-Account.prototype.Withdrawal = function(inputValue) {
+Account.prototype.withdrawal = function(inputValue) {
   this.currentBalance -= parseInt(inputValue);
   return this.currentBalance;
 }
@@ -21,9 +21,9 @@ $(document).ready(function(){
     const accountType = $("input:radio[name=account]:checked").val()
     const inputValue = $("#accountValue").val()   
     if (accountType === 'deposit') {
-      account.Deposit(inputValue);
+      account.deposit(inputValue);
     } else if (accountType === 'withdrawal') {
-      account.Withdrawal(inputValue);
+      account.withdrawal(inputValue);
     }
     balanceElement.html(account.currentBalance)
   })
