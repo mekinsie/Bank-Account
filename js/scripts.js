@@ -1,30 +1,30 @@
 // Business Logic
-function Transaction() {
+function Account() {
   this.currentBalance = 0;
   this.date = new Date();
 }
-Transaction.prototype.Deposit = function(inputValue) {
+Account.prototype.Deposit = function(inputValue) {
   this.currentBalance += parseInt(inputValue);
   return this.currentBalance;
 }
-Transaction.prototype.Withdrawal = function(inputValue) {
+Account.prototype.Withdrawal = function(inputValue) {
   this.currentBalance -= parseInt(inputValue);
   return this.currentBalance;
 }
-const transaction = new Transaction()
+const account = new Account()
 
 // User Interface Logic
 $(document).ready(function(){
   const balanceElement = $('#current-balance')
   $('#submit-button').click(function(event){
     event.preventDefault();
-    const transactionType = $("input:radio[name=transaction]:checked").val()
-    const inputValue = $("#transactionValue").val()   
-    if (transactionType === 'deposit') {
-      transaction.Deposit(inputValue);
-    } else if (transactionType === 'withdrawal') {
-      transaction.Withdrawal(inputValue);
+    const accountType = $("input:radio[name=account]:checked").val()
+    const inputValue = $("#accountValue").val()   
+    if (accountType === 'deposit') {
+      account.Deposit(inputValue);
+    } else if (accountType === 'withdrawal') {
+      account.Withdrawal(inputValue);
     }
-    balanceElement.html(transaction.currentBalance)
+    balanceElement.html(account.currentBalance)
   })
 });
