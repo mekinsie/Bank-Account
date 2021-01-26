@@ -30,3 +30,42 @@ nice styles!
 
 the time the withdrawl or deposite was made const time = new Date() ( time.toDateString() )
 */
+
+
+<div class=bank-history>
+
+current balance {
+balance = 0
+time = x
+}
+
+balence = {
+  current: '5'
+  date: 'time'
+}
+balence.map(obj => {
+  <div mybalence> obj.date | obj.transaction | obj.currentBalence  </div>
+})
+``
+object.date {
+  date: 
+  time:
+}
+object.transaction {
+  withdrawal: --> convert to negative 
+  deposit: --> 
+}
+
+function(add inputs to current balance)
+
+current balance object
+time object
+
+loop 
+
+
+addressbook.prototype.deposit(function(){
+  add deposit input to balance
+  log the time
+  print div.bank-history
+}

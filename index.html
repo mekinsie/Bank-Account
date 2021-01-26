@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/scripts.js"></script>
   <title>Bank Account</title>  
 </head>
 <body>
-<form>
-
-</form>
-
-
+  <form class="form">
+    <div>
+      <label for="radio-deposit">Deposit</label>
+      <input id="radio-deposit" type="radio" name="transaction" value="deposit" checked>
+      <label for="radio-withdrawal">Withdrawal</label>
+      <input id="radio-withdrawal" type="radio" name="transaction" value="withdrawal">   
+      <div>
+        <label for="transactionValue">Enter Amount</label>
+        <input id="transactionValue" name="currency-change">   
+      </div>
+      <button type="submit" id="submit-button">Enter</button>
+    </div>
+  </form>
+  <h2>Current Balance</h2>
+  <div id="current-balance">
+  </div>
 </body>
 </html>

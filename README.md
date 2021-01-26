@@ -22,20 +22,28 @@ _The purpose of this bank account application is to practice the concepts of Obj
 ```js
 
 Describe: BankAccount();
-Test: "It will create a BankAccount object that holds currentBalance."
-Expect: new BankAccount().toEqual(({currentBalance:{}));
+Test: "It will create a BankAccount object that holds currentBalance, date and transaction information."
+Expect: new BankAccount().toEqual(({transactions:{}, currentId: 0));
 
-Describe: Withdrawal();
-Test: "It will create a BankAccount object that holds currentBalance."
-Code:
+Describe: Transaction();
+Test: "It will create a transaction object that holds user transaction history and current balance."
+Expect: new Transaction('300', new Date(), '5', '0').toEqual({currentbalance: '295', 'current Date', withdrawal: '-5', deposit: '0'});
+
+Describe: BankAccount.prototype.addTransaction();
+Test: "It will add transaction object to AddressBook."
+Expect: this.addTransaction({currentbalance: '295', 'current Date', withdrawal: '-5', deposit: '0'}).toEqual({{currentbalance: '295', 'current Date', withdrawal: '-5', deposit: '0'}, currentId: 1});
+
+Describe: BankAccount.prototype.assignId();
+Test: "It will grab the current id from BankAccount and increase its value by one and return it"
+Expect(this.assignId().toEqual(1))
+
+Describe: addstoCurrentBalance();
+Test: "It will take withdrawal 
 Expect:
 
-
-Describe: AddressBook();
-Test: "It will produce a prototype for proceeding objects to inherit from"
-Expect(new AddressBook().toEqual({contacts: {}, currentId: 0}));
-
-
+Describe: addstoCurrentBalance();
+Test: "It will take withdrawal 
+Expect:
 ```
 
 ## Setup/Installation Requirements
