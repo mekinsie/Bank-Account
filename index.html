@@ -7,21 +7,24 @@
   <title>Bank Account</title>  
 </head>
 <body>
-  <form class="form">
-    <div>
-      <label for="radio-deposit">Deposit</label>
-      <input id="radio-deposit" type="radio" name="account" value="deposit" checked>
-      <label for="radio-withdrawal">Withdrawal</label>
-      <input id="radio-withdrawal" type="radio" name="account" value="withdrawal">   
+  <h1>TRUSTED BANK</h1>
+  <div id="account-container">
+    <form class="form">
       <div>
-        <label for="accountValue">Enter Amount</label>
-        <input id="accountValue" name="currency-change">   
+        <label for="radio-deposit">Deposit</label>
+        <input id="radio-deposit" type="radio" name="account" value="deposit" checked>
+        <label for="radio-withdrawal">Withdrawal</label>
+        <input id="radio-withdrawal" type="radio" name="account" value="withdrawal">   
+        <div>
+          <label for="accountValue">Enter Amount</label>
+          <input autocomplete="off" id="accountValue" name="currency-change">   
+        </div>
+        <button type="submit" id="submit-button">Enter</button>
       </div>
-      <button type="submit" id="submit-button">Enter</button>
+    </form>
+    <h2>Current Balance</h2>
+    <div id="current-balance">
     </div>
-  </form>
-  <h2>Current Balance</h2>
-  <div id="current-balance">
   </div>
 </body>
 </html>
